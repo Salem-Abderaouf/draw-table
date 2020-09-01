@@ -26,6 +26,18 @@ html , body{
     border: 1px solid transparent;
     border-radius: 8px;
 }
+#clear-btn{
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    background-color: midnightblue;
+    color: white;
+    letter-spacing: 1px;
+    transition: background-color .3s linear;
+}
+#clear-btn:hover{
+    background-color: darkblue;
+}
 .board-draw{
     flex-grow: 1;
 }
