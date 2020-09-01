@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Draw it</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="widgets">
+            <label for="color-picker">PICKUP COLOR</label><br><br>
+            <input type="color" name="color" id="color-picker">
+            <br><br>
+            <label for="font-size">FONT SIZE</label><br><br>
+            <input type="range" name="font-size" min="2" max="10" step="2" id="font-size">
+
+        </div>
+        <div class="board-draw">
+            <canvas id="canva"></canvas>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
