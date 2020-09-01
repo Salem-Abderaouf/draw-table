@@ -38,6 +38,7 @@ label{
     color: white;
     letter-spacing: 1px;
     font-weight: bold;
+    cursor: pointer;
     transition: background-color .3s linear;
 }
 #clear-btn:hover{
