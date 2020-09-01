@@ -1,12 +1,14 @@
 const canvas = document.getElementById("canva");
 const ctx = canvas.getContext("2d");
-let hexValue = document.getElementById('color-picker');
-let fontValue = document.getElementById('font-size');
+const hexValue = document.getElementById('color-picker');
+const fontValue = document.getElementById('font-size');
+const clearbtn = document.getElementById('clear-btn')
 let defaultPenSize = 2;
 let defaultColor = "#000"
 let isClicked = false;
 
-
+console.log(canvas)
+clearbtn.addEventListener('click', () => { ctx.clearRect(0, 0, canvas.clientHeight, canvas.clientWidth); })
 hexValue.addEventListener('change', () => { defaultColor = hexValue.value })
 fontValue.addEventListener('change', () => { defaultPenSize = fontValue.value })
 canvas.onclick = () => { isClicked = !isClicked; }
