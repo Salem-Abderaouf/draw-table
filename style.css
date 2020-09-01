@@ -47,6 +47,7 @@ label{
     flex-grow: 1;
 }
 #canva{
+    position: relative;
     height: 100%;
     width: 100%;
     border:1px solid #3d5a80;
