@@ -7,6 +7,7 @@ let defaultPenSize = 2;
 let defaultColor = "#000"
 let isClicked = false;
 
+// Adjust cursor position inside canvas
 function getMousePos(canvas, evt) {
     var rect = canvas.getBoundingClientRect(),
         scaleX = canvas.width / rect.width,
@@ -22,6 +23,7 @@ clearbtn.addEventListener('click', () => { ctx.clearRect(0, 0, canvas.clientHeig
 colorValue.addEventListener('change', () => { defaultColor = colorValue.value })
 fontValue.addEventListener('change', () => { defaultPenSize = fontValue.value })
 canvas.onclick = () => { isClicked = !isClicked; }
+// Draw function 
 canvas.addEventListener('mousemove', (e) => {
     if (isClicked) {
         let pos = getMousePos(canvas, e);
