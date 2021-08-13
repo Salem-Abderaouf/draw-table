@@ -8,6 +8,7 @@ html , body{
 }
 .row{
     display: flex;
+    flex-wrap: wrap-reverse;
     font-family: 'Gotham Pro';
     height: inherit;
     padding: 20px;
